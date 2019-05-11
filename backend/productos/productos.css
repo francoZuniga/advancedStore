@@ -1,0 +1,15 @@
+section{
+  width: 90%;
+  height: 90%;
+  background-color: #d7d7d7;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+}
+section .carrusel{
+  width: 50%;
+}

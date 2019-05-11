@@ -1,0 +1,26 @@
+body{
+  background-image: url("../Media/icono_imaguen/back.png");
+  background-repeat: repeat;
+}
+.form-signin{
+  width: 50%;
+  min-width: 300px;
+  padding: 15px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.form-signin .img{
+  width: 80%;
+  margin: 0 auto;
+  min-width: 200px;
+  display: block;
+  background-color: #e3e3e3;
+  border-radius: 0px 0px 25px 25px;
+  -moz-border-radius: 0px 0px 25px 25px;
+  -webkit-border-radius: 0px 0px 25px 25px;
+  border: 0px solid #000000;
+}
+.form-signin .img img{
+  width: 100%;
+  float: right;
+}

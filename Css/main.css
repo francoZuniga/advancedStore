@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/*el menu Responsive*/
+body{
+  background-image: url("../Media/icono_imaguen/back.png");
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 64px;
+  background-color: #e1381c;
+  color: #FFF;
+  display: flex;
+  justify-content: flex-start;
+}
+section{
+  min-height: 600px;
+}
+section .presentacion{
+  width: 95%;
+  min-height: 400px;
+  height: auto;
+  margin-top: 5%;
+  background-image: url("../Media/img/e-comerce.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: right;
+  -webkit-box-shadow: 6px 6px 41px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 6px 41px -2px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 41px -2px rgba(0,0,0,0.75);
+}
+section .presentacion p{
+  width: 50%;
+  font-size: 14pt;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  margin: 2%;
+}
+section .presentacion_2{
+  width: 95%;
+  height: auto;
+  min-height: 400px;
+  margin-top: 5%;
+  background-image: url("../Media/img/developer.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: left;
+  -webkit-box-shadow: 6px 6px 41px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 6px 41px -2px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 41px -2px rgba(0,0,0,0.75);
+}
+section .presentacion_2 p{
+  width: 60%;
+  font-size: 14pt;
+  font-family: 'Roboto', sans-serif;
+  text-align: right;
+  float: right;
+  margin: 2%;
+}
+section .presentacion h5{
+  margin: 2%;
+  margin-left: 15%;
+  text-align: left;
+}
+section .presentacion_2 h5{
+  margin: 5%;
+  text-align: center;
+}
+section .presentacion_2 form{
+  width: 50%;
+  float: right;
+  background-color: #fff;
+
+}
+section .presentacion_2 p img{
+  margin-right: 35%;
+  background-color: #fff;
+}
+section .presentacion_3{
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 5%;
+  -webkit-box-shadow: 6px 6px 41px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 6px 41px -2px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 41px -2px rgba(0,0,0,0.75);
+}
+section .presentacion_3 p{
+  font-size: 14pt;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  padding: 5%;
+}
+section .presentacion_3{
+  width: 95%;
+  height: 400px;
+  margin-top: 5%;
+  -webkit-box-shadow: 6px 6px 41px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 6px 41px -2px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 41px -2px rgba(0,0,0,0.75);
+}
+section .presentacion_3 p img{
+  margin-right: 35%;
+  background-color: #fff;
+}
+section h5{
+  width: 100%;
+  font-size: 17pt;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+}
+section h3{
+  width: 100%;
+  font-size: 23pt;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+}
+@media (max-width: 425px) {
+  section .presentacion{
+    background-size: auto;
+    background-position: bottom;
+    height: auto;
+  }
+  section .presentacion p{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    padding: 1%;
+  }
+  section .presentacion h5{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    padding: 1%;
+  }
+  section .presentacion_2{
+    background-size: auto;
+    background-position: bottom;
+    height: auto;
+  }
+  section .presentacion_2 p{
+    width: 80%;
+    text-align: left;
+    margin-right: 10%;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    padding: 1%;
+  }
+  section .presentacion_2 h5{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    padding: 1%;
+  }
+  section form{
+    width: 80%;
+  }
+}

@@ -1,0 +1,15 @@
+/fichas tecnicas:
+audio:
+parlantes (modelo, marca, ficha, conectividad, descripción)*
+auriculares  *
+
+gaming:
+teclados (marca, modelo, tipo, switch, descripción) 1/2d
+mouse (modelo , marca, tipo, dpi, descripción)1/2d
+alfombrillas (modelo, marca, tamaño, descripción)1/2d
+
+componentes:
+placas de video (modelo marca, línea, serie, memoria, GB, interfaz, alimentación, descripción)
+placas madre (modelo, marca, capacidad de memoria, chipset, Socket, memoria ram, descripción)
+placas wifi (modelo, marca, velocidad, tipo, interfaz)
+discos (Marca, Modelo, Versión, Capacidad, Tecnológica interna, descripción)

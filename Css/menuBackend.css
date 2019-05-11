@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+/*el menu de navegacion responcive*/
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+	font-size: 13pt;
+  overflow-x: hidden;
+  background-image: url("../Media/icono_imaguen/back.png");
+  background-repeat: repeat;
+}
+#menu{
+  display: none;
+}
+label img{
+  position: fixed;
+  float: left;
+  width: 60px;
+  background-color: #e1381c;
+}
+.buscador{
+  height: 60px;
+  width: 80%;
+  background-color: #dfdfdf;
+  position: fixed;
+  vertical-align: middle;
+  margin-left: 15%;
+}
+header{
+  width: 60px;
+  height: 100%;
+  position: fixed;
+  background-color: #e1381c;
+}
+header img{
+
+}
+header nav{
+  margin-top: 100%;
+  margin-bottom: auto;
+}
+header nav ul{
+  display: flex;
+  margin-left: 0;
+  flex-direction: column;
+}
+header nav ul li{
+  width: 100%;
+  height: 60px;
+  vertical-align: middle;
+  list-style: none;
+}
+header nav ul li a img{
+  width: 40px;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+}
+header nav ul li a{
+  text-decoration: none;
+  color: #000;
+}header nav ul li a span{
+  width: 50%;
+  font-size: 11pt;
+  float: left;
+}
+a.tooltips {
+    position: relative;
+    display: inline;
+}
+a.tooltips span {
+    position: absolute;
+    width:140px;
+    color: #FFFFFF;
+    background: #E1381C;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 8px;
+}
+a.tooltips span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -8px;
+    width: 0; height: 0;
+    border-right: 8px solid #E1381C;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+a:hover.tooltips span {
+    visibility: visible;
+    opacity: 0.8;
+    left: 200%;
+    top: 50%;
+    margin-top: 0px;
+    margin-left: 30px;
+    z-index: 999;
+}
+/*la seccion donde se muentran los elemenetos de : ventas, almacen, stock, productos*/
+section{
+  width: 90%;
+  float: right;
+  overflow-x: auto;
+  margin-top: 60px;
+}
+section #mas{
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  outline: none;
+  top: 10%;
+  left: 3%;
+  background-color: #ef1123;
+  color: #fff;
+  background-image: url("../Media/outline_add_black_18dp.png");
+  background-size: 100%;
+  font-size: 50px;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 2px solid #fff;
+}
+/* el buscador de la pagina*/
+.buscar form{
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: 15%;
+}
+.buscador form .busqueda{
+  width: 40%;
+  height: 20px;
+  margin-left: 15%;
+  margin-top: 10px;
+  padding-left: 5px;
+  outline: inherit;
+  float: left;
+  border-radius: 49px 10px 10px 49px;
+  -moz-border-radius: 49px 10px 10px 49px;
+  -webkit-border-radius: 49px 10px 10px 49px;
+  border: 0px solid #000000;
+}
+.buscador form .buscar{
+  width: 10%;
+  height: 22px;
+  margin-top: 10px;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: #ef1123;
+  outline: inherit;
+  float: left;
+  border-radius: 0px 49px 49px 0px;
+-moz-border-radius: 0px 49px 49px 0px;
+-webkit-border-radius: 0px 49px 49px 0px;
+border: 0px solid #000000;
+}
+.buscador form .buscar img{
+  width: 15px;
+}
+/* este es el estilo de los scrollbar de la paguina*/
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #8c8c8c;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+@media screen and (max-width: 768px){
+  /*los estilos que toman cuando la paguina esta reducida*/
+  section #menu{
+    position: fixed;
+    float: right;
+    margin-top: 80%;
+  }
+  section #menu:checked ~ header{
+    margin-left: 0;
+  }
+  header{
+    transition: margin-left 0.7s;
+    margin-top: 60px;
+    margin-left:-60px;
+  }
+  section #  mas{
+    top: 80%;
+    left: 80%;
+  }
+  section .mas img{
+    background-color: #ef1123;
+  }
+}
+@media print {
+  header{
+    display: none;
+  }
+  #menu{
+    display: none;
+  }
+}
